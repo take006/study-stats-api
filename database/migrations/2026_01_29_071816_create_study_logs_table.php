@@ -17,7 +17,7 @@ return new class extends Migration
             //単体index
             $table->uuid('category_id')->index()->onDelete('set null');
 
-            $table->unsignedInteger('minutes');
+            $table->unsignedInteger('duration_minutes');
             $table->date('study_date');
             $table->text('content')->nullable();
             $table->string('image_path')->nullable();
